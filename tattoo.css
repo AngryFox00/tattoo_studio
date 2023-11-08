@@ -96,8 +96,20 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%,
 
 /* Секція:Обери свій стиль*/
 
+main{
+  position: relative;
+  height: 1800px;
+  width: 100%;
+ background-image:url(https://dsfokvnqjxxsziqofvss.supabase.co/storage/v1/object/public/Front_icon/icon/visax-bI_QFUZc5S4-unsplash%201.png);
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+}
+
 .main-title{
-  position: absolute;
+ position: absolute;
+ top:123px;
+ left:140px;
   color: var(--white-text-color);
 font-family: Oswald;
 font-size: 36px;
@@ -105,4 +117,34 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 z-index: 10;
+}
+
+/*grids*/ 
+.text-grids{
+  color: var(--white-text-color);
+font-family: Cuprum;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 180%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3,336px);
+  grid-template-rows: auto;
+  row-gap: 1fr;
+  column-gap: 2fr;
+}
+.column{
+  grid-column: 1 / 2;
+}
+.box1{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.box2{
+  grid-column: 2;
+  grid-row: 2;
 }
