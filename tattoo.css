@@ -19,6 +19,7 @@ height: 109px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  letter-spacing:1.5px;
 }
 
 .nav-link{
@@ -105,7 +106,14 @@ main{
  background-position: center;
  background-repeat: no-repeat;
 }
-
+.text-grids{
+color: #FFF;
+font-family: Cuprum;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 180%; 
+}
 .main-title{
  position: absolute;
  top:123px;
@@ -131,20 +139,92 @@ line-height: 180%;
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3,336px);
-  grid-template-rows: auto;
-  row-gap: 1fr;
-  column-gap: 2fr;
-}
-.column{
-  grid-column: 1 / 2;
-}
-.box1{
-  grid-column: 2;
-  grid-row: 1;
+  justify-content: center;
+  padding-top: 210px;
+  grid-template-columns: repeat(3,366px);
+  grid-template-rows: repeat(5, minmax(auto,auto));
+  row-gap: 23px;
+  column-gap: 30px;
+  
 }
 
 .box2{
-  grid-column: 2;
-  grid-row: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
+.box4{
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 2;
+  position: relative;
+}
+.box5{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  position: relative;
+  
+}
+.images{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  position: relative;
+}
+button{
+  border: none;
+  width: 273px;
+height: 60px;
+flex-shrink: 0;
+border-radius: 30px;
+background: var(--white-text-color);
+box-shadow: 4px 7px 6px 0px rgba(0, 0, 0, 0.50) inset;
+color: #000;
+font-family: Oswald;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 180%; 
+position: absolute;
+top:60px;
+left:49px;
+}
+
+
+/*позиціювання зображення в сітці*/
+.image-1{
+position: absolute;
+right: 0px;
+box-shadow:19px 20px ;
+border-radius: 50%;
+}
+
+.image-2{
+  position:absolute;
+  top:294px;
+  right: 157px;
+  box-shadow:10px 15px ;
+border-radius: 50%;
+}
+
+.image-3{
+  position: absolute;
+  right: 0px;
+  top:487px;
+  box-shadow:10px 12px ;
+border-radius: 50%;
+}
+
+.image-4{
+  position: absolute;
+  top:93px;
+  right: 38px;
+  box-shadow: 28px 26px;
+}
+
+/*Блок секції "Майстри"*/
